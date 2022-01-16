@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    
+}
+nav {
+    background-color: saddlebrown;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    z-index: 1;
+}
+nav > i {
+    color: white;
+    font-size: 20px;
+    margin: 5px
+}
+
+/* .fa-angle-double-up {
+    color: saddlebrown;
+    font-size: 25px;
+    z-index: 2;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    cursor: pointer;
+} */
+
+.cards-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1.5rem;
+    left: 40px;
+    top: 100px; 
+    padding-bottom: 20px; 
+}
+
+.card {
+    border-bottom: solid 2px #F5F5F5;
+    width: 85vw;
+    max-width: 700px;
+    height: 205px;
+    position: relative;
+    display: flex;
+}
+.card-info-container{
+    position: absolute;
+    height: 180px;
+    left: 150px;
+    margin-left: 19px;
+    justify-content: center;
+    font-size: 10.5px;
+    display: flex;
+    flex-direction: column;
+}
+.card-location {
+    display: flex;
+}
+.card-location > p {
+    text-transform: uppercase;
+    margin:0 12px 0 4px;
+    letter-spacing: 1px;
+}
+.card-location > i {
+    color: saddlebrown;
+}
+.card-location > a{
+    color: #918E9B;
+    
+}
+.travel-dates {
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.card-title{
+    margin-bottom: 14px;
+    line-height: 30px;
+}
+.card-info-container > p{
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.card-img-container{
+    width: 150px;
+    height: 180px;
+    position: absolute;
+}
+
+.card-img-container > img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover; 
+    border-radius: 5px;
+}
+
+@media (max-width:480px) {
+    .card{
+        max-width: 320px;
+        flex-direction:column;
+        height: 420px;
+    }
+     .card-img-container{
+        width: 320px;
+    }
+   .card-info-container {
+       margin: 5px;
+       left: 0;
+       top: 100px;
+       height: 100%;
+   }
+}
